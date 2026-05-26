@@ -1,0 +1,31 @@
+# dependencies
+node_modules
+
+# environment variables
+.env
+
+# build files
+dist
+build
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# editor files
+.vscode
+.idea
+
+# TypeScript cache
+*.tsbuildinfo
+
+# package lock optional
+# package-lock.json
+
+# coverage
+coverage
