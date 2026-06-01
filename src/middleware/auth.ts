@@ -1,6 +1,7 @@
 import type { NextFunction, Request, Response } from "express";
-import  Jwt  from "jsonwebtoken";
+import  Jwt, { type JwtPayload }  from "jsonwebtoken";
 import config from "../config";
+import { pool } from "../db";
 const auth = ()=>{
     return async (req : Request,res : Response,next : NextFunction)=>{
 
@@ -18,10 +19,21 @@ const auth = ()=>{
     }
 
 
-    const decoded = Jwt.verify(token as string,config.secret as string);
+    const decoded = Jwt.verify(token as string,config.secret as string) as JwtPayload;
 
-    console.log(decoded);
-    
+    const userData = await pool.query(`
+        
+        
+        SELECT * FROM users WHERE email=$1`, [decoded.email])
+
+        // console.log(userData);
+
+        const user = userData.rows[0];
+
+        console.log(user);
+        
+        
+
 
     next();
 
