@@ -62,7 +62,8 @@ import { pool } from "../db";
 
 const auth = ()=>{
     return async (req : Request,res : Response,next : NextFunction)=>{
-
+try {
+    
     // console.log(req.headers.authorization);
 
     const token = req.headers.authorization;
@@ -106,7 +107,12 @@ const auth = ()=>{
         }
 
 
+        req.user = decoded 
+
     next();
+} catch (error) {
+    next(error);
+}
 
 };
 }
