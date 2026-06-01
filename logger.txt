@@ -90,3 +90,27 @@ Method ->POST Time -> 1780304875226 - URL/api/auth/login
 Method ->GET Time -> 1780304907668 - URL/api/users
 
 Method ->GET Time -> 1780304962042 - URL/api/users
+
+Method ->POST Time -> 1780305115791 - URL/api/auth/login
+
+Method ->POST Time -> 1780305123886 - URL/api/auth/login
+
+Method ->GET Time -> 1780305148328 - URL/api/users
+
+Method ->GET Time -> 1780305250811 - URL/api/users
+
+Method ->GET Time -> 1780305589743 - URL/api/users
+
+Method ->GET Time -> 1780305701702 - URL/api/users
+
+Method ->GET Time -> 1780305819336 - URL/api/users
+
+Method ->POST Time -> 1780305856764 - URL/api/users
+
+Method ->POST Time -> 1780305869302 - URL/api/auth/login
+
+Method ->POST Time -> 1780305888948 - URL/api/users
+
+Method ->POST Time -> 1780305904215 - URL/api/auth/login
+
+Method ->GET Time -> 1780305926483 - URL/api/users
