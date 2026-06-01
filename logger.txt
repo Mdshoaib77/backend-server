@@ -1,0 +1,36 @@
+Method ->GET Time -> 1780285603328 URL/
+Method ->GET Time -> 1780285744186 - URL/users
+
+Method ->GET Time -> 1780285747526 - URL/userr
+
+Method ->GET Time -> 1780285750251 - URL/user
+
+Method ->GET Time -> 1780285753068 - URL/users
+
+Method ->GET Time -> 1780285767342 - URL/api/users
+
+Method ->GET Time -> 1780286085135 - URL/api/users/8
+
+Method ->GET Time -> 1780286535922 - URL/api/users
+
+Method ->GET Time -> 1780286884545 - URL/api/users
+
+Method ->GET Time -> 1780286976242 - URL/api/users
+
+Method ->GET Time -> 1780287104991 - URL/api/users
+
+Method ->POST Time -> 1780287348648 - URL/api/auth/login
+
+Method ->GET Time -> 1780287371966 - URL/api/users
+
+Method ->GET Time -> 1780287425503 - URL/api/users
+
+Method ->GET Time -> 1780287603379 - URL/api/users
+
+Method ->GET Time -> 1780287626990 - URL/api/users
+
+Method ->GET Time -> 1780287643381 - URL/api/users
+
+Method ->GET Time -> 1780287881021 - URL/api/users
+
+Method ->GET Time -> 1780288146930 - URL/api/users

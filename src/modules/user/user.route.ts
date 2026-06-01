@@ -1,15 +1,35 @@
+// import { Router } from "express";
+// import { userController } from "./user.controler";
+// import auth from "../../middleware/auth";
+
+// const router = Router()
+
+
+
+// router.post('/',userController.createUser );
+// router.get('/',auth(), userController.getAllUsers);
+// router.get('/:id', userController.getSingleUser)
+
+// router.put('s/:id', userController.updateUser )
+// router.delete("/:id", userController.deleteUser)
+
+
+// export const userRoute = router
+
 import { Router } from "express";
 import { userController } from "./user.controler";
+import auth from "../../middleware/auth";
 
-const router = Router()
+const router = Router();
 
+router.post("/", userController.createUser);
 
-router.post('/',userController.createUser );
-router.get('/',userController.getAllUsers);
-router.get('/:id', userController.getSingleUser)
+router.get("/", auth(), userController.getAllUsers);
 
-router.put('s/:id', userController.updateUser )
-router.delete("/:id", userController.deleteUser)
+router.get("/:id", userController.getSingleUser);
 
+router.put("/:id", userController.updateUser);
 
-export const userRoute = router
+router.delete("/:id", userController.deleteUser);
+
+export const userRoute = router;
