@@ -30,9 +30,14 @@ const auth = ()=>{
 
         const user = userData.rows[0];
 
-        console.log(user);
+        // console.log(user);
         
-        
+        if(userData.rows.length === 0){
+ res.status(404).json({
+            success : false,
+            message : "User Not Found!",
+        });
+        }
 
 
     next();
