@@ -60,8 +60,13 @@ import  Jwt, { type JwtPayload }  from "jsonwebtoken";
 import config from "../config";
 import { pool } from "../db";
 
-const auth = ()=>{
+const auth = (...roles : any)=>{
+
+  
+    
+
     return async (req : Request,res : Response,next : NextFunction)=>{
+          console.log(roles);
 try {
     
     // console.log(req.headers.authorization);
@@ -99,7 +104,7 @@ try {
         }
 
 
-        if(!user.is_active){
+        if(!user?.is_active){
         return res.status(403).json({
             success : false,
             message : "Forbidden!!",

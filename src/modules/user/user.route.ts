@@ -24,7 +24,7 @@ const router = Router();
 
 router.post("/", userController.createUser);
 
-router.get("/", auth(), userController.getAllUsers);
+router.get("/", auth("admin", "agent"), userController.getAllUsers);
 
 router.get("/:id", userController.getSingleUser);
 
