@@ -4,7 +4,7 @@ import { userService } from "./user.service";
 
 
 const createUser = async(req : Request, res : Response)=>{
-    // const {name,email,password, age} = req.body;
+    //commend const {name,email,password, age} = req.body;
    try {
     const result = await userService.createUserIntoDB( req.body);
         // console.log(result);
